@@ -14,7 +14,10 @@ export function Header() {
           <motion.div
             className="flex items-center"
             whileHover={{ scale: 1.02 }}
-          ></motion.div>
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <InspectoLogo size="sm" showText={true} />
+          </motion.div>
 
           <div className="flex items-center gap-3">
             <motion.button
