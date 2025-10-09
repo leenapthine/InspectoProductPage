@@ -328,7 +328,7 @@ export default function App() {
       <footer className="py-12 px-6 bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-500">
-            © 2024 INSPECTO. Built for independent home inspectors.
+            © 2025 INSPECTO. Built for independent home inspectors.
           </p>
         </div>
       </footer>
