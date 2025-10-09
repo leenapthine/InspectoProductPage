@@ -149,9 +149,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Trusted By Section */}
-      <TrustedBySection />
-
       {/* Features Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -268,6 +265,9 @@ export default function App() {
 
       {/* Pricing Section */}
       <PricingSection />
+
+      {/* Trusted By Section */}
+      <TrustedBySection />
 
       {/* FAQ Section */}
       <FAQSection />
