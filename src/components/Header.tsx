@@ -16,18 +16,29 @@ export function Header() {
             whileHover={{ scale: 1.02 }}
           ></motion.div>
 
-          <motion.button
-            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200"
-            onClick={() =>
-              document
-                .getElementById("waitlist-form")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Join Waitlist
-          </motion.button>
+          <div className="flex items-center gap-3">
+            <motion.button
+              className="border border-gray-300 text-gray-700 px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200"
+              onClick={() => window.open('#', '_blank')}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Try It Out
+            </motion.button>
+            
+            <motion.button
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200"
+              onClick={() =>
+                document
+                  .getElementById("waitlist-form")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Book A Demo
+            </motion.button>
+          </div>
         </div>
       </div>
     </motion.header>

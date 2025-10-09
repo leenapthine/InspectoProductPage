@@ -4,6 +4,9 @@ import { Camera, Mic, FileText, Clock, Users, Award, ArrowRight, Check } from 'l
 import { Header } from './components/Header';
 import { WorkflowSteps } from './components/WorkflowSteps';
 import { MultiPhoneMockup } from './components/MultiPhoneMockup';
+import { TrustedBySection } from './components/TrustedBySection';
+import { PricingSection } from './components/PricingSection';
+import { FAQSection } from './components/FAQSection';
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -99,17 +102,17 @@ export default function App() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Join Waitlist
+                  Book A Demo
                   <ArrowRight className="w-5 h-5 ml-2 inline" />
                 </motion.button>
                 
                 <motion.button
-                  className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-200"
-                  onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-200"
+                  onClick={() => window.open('#', '_blank')}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  See How It Works
+                  Try It Out
                 </motion.button>
               </motion.div>
               
@@ -145,6 +148,9 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* Trusted By Section */}
+      <TrustedBySection />
 
       {/* Features Section */}
       <section className="py-20 px-6 bg-gray-50">
@@ -260,6 +266,12 @@ export default function App() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <PricingSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* Waitlist CTA */}
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
@@ -270,10 +282,10 @@ export default function App() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ready to transform your inspections?
+              Ready to see INSPECTO in action?
             </h2>
             <p className="text-xl text-gray-600 mb-12">
-              Join hundreds of inspectors already on the waitlist for early access to INSPECTO.
+              Book a personalized demo and discover how INSPECTO can transform your inspection workflow.
             </p>
           </motion.div>
           
@@ -301,12 +313,12 @@ export default function App() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Join Waitlist
+                Book A Demo
               </motion.button>
             </div>
             
             <p className="text-sm text-gray-500 mt-4">
-              We'll only email you about launch updates and early access.
+              We'll contact you to schedule a personalized demo at your convenience.
             </p>
           </motion.form>
         </div>
