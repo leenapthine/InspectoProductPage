@@ -329,11 +329,6 @@ export default function App() {
       {/* Footer */}
       <footer className="py-12 px-6 bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center">
-          <InspectoLogo
-            size="md"
-            showText
-            className="mx-auto block h-16 translate-x-6 md:h-[72px] md:translate-x-10"
-          />
           <p className="text-gray-500">
             © 2025 INSPECTO. Built for independent home inspectors.
           </p>
