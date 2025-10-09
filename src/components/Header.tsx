@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import inspectorLogo from "figma:asset/2773b54b1ebecc8bf76ca8ce37aa97a26de00f92.png";
+import { InspectoLogo } from "./InspectoLogo";
+
 
 export function Header() {
   return (
