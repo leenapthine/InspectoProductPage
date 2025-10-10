@@ -110,7 +110,7 @@ export default function App() {
                 
                 <motion.button
                   className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-200"
-                  onClick={() => window.open('https://inspectos.vercel.app/', '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open('https://www.figma.com/proto/RnJZc9dRZIq93ZUZzsqy4W/Inspecto-V2?node-id=110-1232&t=rfvZOfHmSCZUfV5N-0&scaling=scale-down&content-scaling=fixed&page-id=103%3A1177&starting-point-node-id=110%3A1232', '_blank', 'noopener,noreferrer')}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
